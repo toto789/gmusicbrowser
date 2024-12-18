@@ -794,7 +794,7 @@ INIT
 sub new
 {	my $ID= $_[0]{IDs}[0];
 	if ($Instance) { $Instance->present; $Instance->{ID}=$ID; $Instance->preview_update; return };
-	my $self= Gtk3::Dialog->new("Custom auto-fill filename formats", undef, [],  'gtk-close' => 'none');
+	my $self= Gtk3::Dialog->new(_"Custom auto-fill filename formats", undef, [],  'gtk-close' => 'none');
 	$Instance=bless $self,__PACKAGE__;
 	::SetWSize($self,'AutofillFormats');
 	$self->set_border_width(4);
