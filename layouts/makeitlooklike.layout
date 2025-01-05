@@ -5,6 +5,7 @@
 Type=G+
 Category = _"Make it look like"
 Default		= Window(size=700x600,sticky=1) HPbrowser(size=160-600) FilterPane0(artistinfo=1,albumpsize=32,albuminfo=1)
+Name	= _"Quod Libet"
 MBmenu		= MainMenuItem LayoutItem PSortItem PFilterItem QueueItem
 HBButtons1	= Prev Play Next
 HBButtons2	= OpenBrowser Pref Quit
@@ -331,7 +332,7 @@ Category = _"Make it look like"
 Title = %a - %t
 Default = Window(size=600x126)
 DefaultFocus = PlayPause
-
+Name		= _"Rhythmbox Compact"
 KeyBindings = a-Return OpenSongProp c-space PlayPause a-Left PrevSong a-Right NextSong c-Down DecVolume c-Up IncVolume
 
 VolumeScroll = HBVolume
@@ -499,7 +500,7 @@ Title = _"Playlists"
 
 [itunes-like]
 Type=G+
-Name		= "itunes"
+Name		= "iTunes"
 Category	= _"Make it look like"
 Default		= Window(size=1120x820,hidden=QueueList) VPfp_list(size=40) HPfp0(size=300) HPfp_list_src(size=175)
 HBIndic		= MBmenu Sort 10Filter Queue 10Pos
